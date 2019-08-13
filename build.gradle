@@ -26,6 +26,7 @@ repositories {
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
     testCompile("org.springframework.boot:spring-boot-starter-test:$springBootVersion")
+    testCompile("org.mockito:mockito-core:2.23.4")
 }
 
 bootRun.environment([
@@ -39,4 +40,6 @@ test.environment([
         "CF_INSTANCE_INDEX": "34",
         "CF_INSTANCE_ADDR": "123.sesame.street"
 ])
+
+
 
